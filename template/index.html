@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+  Article template. To publish an article:
+    1. Copy this folder to /<slug>/ (lowercase, hyphens), and put its cover image in that folder.
+    2. Replace every ARTICLE_* placeholder below and write the body.
+    3. Add its entry to /articles.json (see README.md); the portfolio's Articles tab lists it from there.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARTICLE_TITLE | Ethan Gueck</title>
+  <meta name="description" content="ARTICLE_SUBTITLE">
+  <meta name="author" content="Ethan Gueck">
+  <meta name="theme-color" content="#0B3D2E">
+  <meta property="og:title" content="ARTICLE_TITLE">
+  <meta property="og:description" content="ARTICLE_SUBTITLE">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="cover.webp">
+  <link rel="icon" href="https://ethan-gueck.github.io/assets/img/favicon.svg" type="image/svg+xml">
+  <script>try { if (localStorage.getItem('pp-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://ethan-gueck.github.io/assets/css/tokens.css">
+  <link rel="stylesheet" href="https://ethan-gueck.github.io/assets/css/base.css">
+  <link rel="stylesheet" href="https://ethan-gueck.github.io/assets/css/components/article.css">
+  <link rel="stylesheet" href="https://ethan-gueck.github.io/assets/css/dark.css">
+  <link rel="stylesheet" href="../assets/articles.css">
+  <script src="../assets/theme.js" defer></script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="site-head__bar">
+      <a href="../">← All articles</a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode" title="Dark mode">
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+      </button>
+    </div>
+    <div class="site-head__title">
+      <p class="site-head__kicker">Article</p>
+      <h1 class="site-head__name">ARTICLE_TITLE</h1>
+      <p class="site-head__subtitle">ARTICLE_SUBTITLE</p>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <article class="article">
+      <p class="article-meta">Ethan Gueck · ARTICLE_DATE</p>
+      <figure class="article-hero">
+        <img src="cover.webp" alt="ARTICLE_IMAGE_ALT" width="1600" height="900">
+        <figcaption>ARTICLE_IMAGE_CAPTION</figcaption>
+      </figure>
+
+      <h2><span class="sec-num">1</span>First section</h2>
+      <p>Body text. Headings, lists (<code>ul.prose-list</code>), tables (<code>table.data-table</code>) and figures use the portfolio's article styles.</p>
+      <blockquote class="pull-quote">ARTICLE_QUOTE</blockquote>
+      <p>More body text.</p>
+    </article>
+  </main>
+
+  <footer class="site-foot">© Ethan Gueck <span data-year>2026</span></footer>
+</body>
+</html>

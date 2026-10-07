@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Articles | Ethan Gueck</title>
+  <meta name="description" content="Articles by Ethan Gueck on data science, mathematics and critical infrastructure.">
+  <meta name="author" content="Ethan Gueck">
+  <meta name="theme-color" content="#0B3D2E">
+  <link rel="icon" href="https://ethan-gueck.github.io/assets/img/favicon.svg" type="image/svg+xml">
+  <script>try { if (localStorage.getItem('pp-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- The portfolio's theme, so the articles match the main site in light and dark mode. -->
+  <link rel="stylesheet" href="https://ethan-gueck.github.io/assets/css/tokens.css">
+  <link rel="stylesheet" href="https://ethan-gueck.github.io/assets/css/base.css">
+  <link rel="stylesheet" href="https://ethan-gueck.github.io/assets/css/components/article.css">
+  <link rel="stylesheet" href="https://ethan-gueck.github.io/assets/css/components/library.css">
+  <link rel="stylesheet" href="https://ethan-gueck.github.io/assets/css/dark.css">
+  <link rel="stylesheet" href="assets/articles.css">
+  <script src="https://ethan-gueck.github.io/assets/js/modules/articles.js" defer></script>
+  <script src="assets/theme.js" defer></script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="site-head__bar">
+      <a href="https://ethan-gueck.github.io/#articles">← Ethan Gueck</a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode" title="Dark mode">
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+      </button>
+    </div>
+    <div class="site-head__title">
+      <p class="site-head__kicker">Ethan Gueck</p>
+      <h1 class="site-head__name">Articles</h1>
+    </div>
+  </header>
+  <main class="site-main">
+    <section class="article">
+      <div data-articles></div>
+    </section>
+  </main>
+  <footer class="site-foot">© Ethan Gueck <span data-year>2026</span></footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      window.Site.initArticles(document.querySelector("[data-articles]"), { base: "./" });
+    });
+  </script>
+</body>
+</html>
